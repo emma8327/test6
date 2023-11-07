@@ -50,7 +50,6 @@ int main()
 								if(c2!=1&&c2!=2)
 								{
 									cout<<"不要亂選，你以為在簽樂透嗎?⊙谷⊙"<<endl;
-									goto Re;
 								}
 								break;	
 						
