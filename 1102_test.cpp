@@ -1,12 +1,7 @@
 #include<bits/stdc++.h>
 #include<cstdlib>
 #include<ctime>
-#include <random>
 using namespace  std;
-
-void f() {
-  int random_int = std::rand();
-}
 
 int main()
 {
