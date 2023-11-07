@@ -7,11 +7,9 @@ using namespace  std;
 
 int main()
 {
-Re:
 	start();
 	while(y<0&&food>=0&&family>0)	//判斷是否符合結束條件 
 	{
-	Re:
 		int x=random_int%6+1;	//骰子亂數 
 		int year=random_int%3+1;	//年分亂數 
 		int fight=random_int%4+1;	//挑戰成敗機率亂數 
@@ -75,7 +73,6 @@ Re:
 								if(c2!=1&&c2!=2)
 								{
 									cout<<"不要亂選，你以為在簽樂透嗎?⊙谷⊙"<<endl;
-									goto Re;
 								}
 								break;	
 						
@@ -118,7 +115,6 @@ Re:
 								if(c2!=1&&c2!=2)
 								{
 									cout<<"不要亂選，你以為在簽樂透嗎?⊙谷⊙"<<endl;
-									goto Re;
 								}
 								break;		
 			
@@ -142,18 +138,16 @@ Re:
 								if(c2!=1&&c2!=2)
 								{
 									cout<<"不要亂選，你以為在簽樂透嗎?⊙谷⊙"<<endl;
-									goto Re;
 								}
 								break;		
 					}
 					y+=year;
 					break;
 			default:cout<<"不要亂選，你以為在簽樂透嗎?⊙谷⊙"<<endl;
-					goto Re;
+					break;
 		}
-		if(y==-28||y==-19||y==-3&&food>=0&&family>0)	//若符合特定年分，選擇是否突變
+		while(y==-28||y==-19||y==-3&&food>=0&&family>0)	//若符合特定年分，選擇是否突變
 		{
-			Re2:
 			cout<<endl<<endl<<"符合特定年分，是否要突變? 1.是"<<endl
 			        <<"                          2.否"<<endl;
 				cin>>c3;
@@ -167,7 +161,7 @@ Re:
 							family+=7;
 							break;
 					default:cout<<"不要亂選，你以為在簽樂透嗎?⊙谷⊙"<<endl;
-							goto Re2;
+							break;
 				}
 		} 
 		
