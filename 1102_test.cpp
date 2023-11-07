@@ -6,10 +6,6 @@ using namespace  std;
 int main()
 {
 Re:
-	int x=rand()%6+1;	//骰子亂數 
-	int year=rand()%3+1;	//年分亂數 
-	int fight=rand()%4+1;	//挑戰成敗機率亂數 
-	
 	start();
 	while(y<0&&food>=0&&family>0)	//判斷是否符合結束條件 
 	{
