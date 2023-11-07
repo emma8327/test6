@@ -4,12 +4,17 @@
 #include <random>
 using namespace  std;
 
+void f() {
+  int random_int = std::rand();
+}
+
 int main()
 {
-	int ev=0,food=10,family=10;	//進化值,食物,族群 
-	int y=-38,hunt=10;	//年分,覓食 
-	int c1=0,c2=0,c3=0;	//選擇,子選擇,子子選擇 
-	int random_int = std::rand(); 
+Re:
+	int x=rand()%6+1;	//骰子亂數 
+	int year=rand()%3+1;	//年分亂數 
+	int fight=rand()%4+1;	//挑戰成敗機率亂數 
+	
 	start();
 	while(y<0&&food>=0&&family>0)	//判斷是否符合結束條件 
 	{
