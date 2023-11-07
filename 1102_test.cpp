@@ -265,11 +265,11 @@ int main()
 	return 0;
 }
 void f() {
-  std::array<char,10>random_chars; 
+  std::array<char,10>random_chars; //char random_chars[10];
   randombytes_buf(random_chars, 10); // Compliant
   uint32_t random_int = randombytes_uniform(10); // Compliant
 
-  std::array<char,10>random_chars; 
+  std::array<char,10>random_chars; //uint8_t random_chars[10];
   Botan::System_RNG system;
   system.randomize(random_chars, 10); // Compliant
 }
